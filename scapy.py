@@ -32,8 +32,6 @@ class scrapy_pic:
             self.result_sheet.write(0, td + 1, row1[td])
 
 
-    #def read_first_line(self):
-
     def scrap(self):   #根据源表格的地址抓取对应图片
         if(self.src_sheet.nrows == 0):
             QMessageBox.information(self.window, 'Message', '表格为空')
